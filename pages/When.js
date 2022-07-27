@@ -18,6 +18,7 @@ function When() {
           width={24}
           height={24}
           role="button"
+          alt="arrow left"
         ></Image>
         </IconButton>
 
@@ -29,16 +30,21 @@ function When() {
             <div className={styles.question}>First, when do you need care?</div>
           </div>
           <div className={styles.progressContainer}>
-            <img
-              src="/assets/progress1.svg"
-              className={styles.progressBar}
-            ></img>
+            <Image
+                    
+                    src="/assets/progress1.svg"
+                    width={296}
+                    height={4}
+                    className={styles.progressBar}
+                    alt='progress 1 of 4'
+                
+            />
           </div>
           <div className={styles.btnContainer}>
             <IconButton className={styles.button}>
               <Image
                 src="/assets/clock.svg"
-                alt="Herewith Logo"
+                alt="clock"
                 width={32}
                 height={32}
                 role="button"
@@ -48,7 +54,7 @@ function When() {
             <IconButton className={styles.button}>
               <Image
                 src="/assets/calendar.svg"
-                alt="Herewith Logo"
+                alt="calendar"
                 width={32}
                 height={32}
                 role="button"

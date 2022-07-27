@@ -26,6 +26,7 @@ function FindCaregiver() {
             src="/assets/Arrow_Left.svg"
             width={24}
             height={24}
+            alt='arrow left'
             role="button"
           ></Image>
         </IconButton>
@@ -41,12 +42,17 @@ function FindCaregiver() {
           width={296}
           height={4}
           className={styles.progressBar}
+          alt='progress 2 of 4'
         />
       </div>
       <Card className={styles.card}>
         <Box className={styles.cardHeader}>
           <Icon>
-            <img src="assets/Cash.svg"></img>
+            <Image 
+            width={32}
+            height={32}
+            alt='cash'
+            src="/assets/Cash.svg"></Image>
           </Icon>
           <Typography className={styles.headerType}>
             What's your buget?
