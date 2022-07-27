@@ -19,17 +19,29 @@ function FindCaregiver() {
       <div className={styles.logo}>
         <Logo />
       </div>
-      <Link href={"/When"}>
-        <img className={styles.arrow} src="/assets/Arrow_Left.svg"></img>
-      </Link>
 
+      <Link href={"/When"}>
+        <IconButton className={styles.arrow}>
+          <Image
+            src="/assets/Arrow_Left.svg"
+            width={24}
+            height={24}
+            role="button"
+          ></Image>
+        </IconButton>
+      </Link>
       <div className={styles.questionContainer}>
         <div className={styles.question}>
           Next, let's find your ideal caregiver
         </div>
       </div>
       <div className={styles.progressContainer}>
-        <img src="/assets/progress2.svg" className={styles.progressBar} />
+        <Image
+          src="/assets/progress2.svg"
+          width={296}
+          height={4}
+          className={styles.progressBar}
+        />
       </div>
       <Card className={styles.card}>
         <Box className={styles.cardHeader}>
@@ -51,35 +63,37 @@ function FindCaregiver() {
       <Card className={styles.card}>
         <Box className={styles.cardHeader}>
           <Icon>
-            <img src="assets/Person.svg"></img>
+            <Image src="/assets/Person.svg" height={32} width={32}></Image>
           </Icon>
           <Typography className={styles.headerType}>
             Gender preference
           </Typography>
         </Box>
-        <Box className={styles.row} >
-        <IconButton className={styles.selectionBtn}>
-          <Image
-            src="/assets/Male.svg"
-            alt="Herewith Logo"
-            width={32}
-            height={32}
-            role="button"
-          />
-          <Typography className={styles.btnText}>Male</Typography>
-        </IconButton>
-        <IconButton className={styles.selectionBtn}>
-          <Image
-            src="/assets/Female.svg"
-            alt="Herewith Logo"
-            width={32}
-            height={32}
-            role="button"
-          />
-          <p className={styles.btnText}>Female</p>
-        </IconButton>
+        <Box className={styles.row}>
+          <IconButton className={styles.selectionBtn}>
+            <Image
+              src="/assets/Male.svg"
+              alt="Male"
+              width={32}
+              height={32}
+              role="button"
+            />
+            <Typography className={styles.btnText}>Male</Typography>
+          </IconButton>
+          <IconButton className={styles.selectionBtn}>
+            <Image
+              src="/assets/Female.svg"
+              alt="Female"
+              width={32}
+              height={32}
+              role="button"
+            />
+            <Typography className={styles.btnText}>Female</Typography>
+          </IconButton>
         </Box>
-        <IconButton className={styles.selectionBtn} fullwidth >No Preference</IconButton>
+        <IconButton className={styles.selectionBtn} fullwidth>
+          No Preference
+        </IconButton>
       </Card>
       <Box className={styles.btnBox}>
         <Button className={styles.backBtn} fullWidth>

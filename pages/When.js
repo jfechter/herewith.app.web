@@ -7,15 +7,26 @@ import Image from "next/image";
 import Link from "next/link";
 function When() {
   return (
-    <div className={styles.when} >
-        <div className={styles.logo}>
-            <Logo />
-        </div>
-      <img className={styles.arrow} src="/assets/Arrow_Left.svg"></img>
+    <div className={styles.when}>
+      <div className={styles.logo}>
+        <Logo />
+      </div>
+      <Link  href="/">
+        <IconButton className={styles.arrow}>
+        <Image
+          src="/assets/Arrow_Left.svg"
+          width={24}
+          height={24}
+          role="button"
+        ></Image>
+        </IconButton>
+
+      </Link>
+
       <main className={styles.main}>
         <div className={styles.body}>
           <div className={styles.questionContainer}>
-            <div className={styles.question} >First, when do you need care?</div>
+            <div className={styles.question}>First, when do you need care?</div>
           </div>
           <div className={styles.progressContainer}>
             <img
@@ -24,8 +35,7 @@ function When() {
             ></img>
           </div>
           <div className={styles.btnContainer}>
-            <IconButton className={styles.button} >
-              
+            <IconButton className={styles.button}>
               <Image
                 src="/assets/clock.svg"
                 alt="Herewith Logo"
@@ -33,9 +43,9 @@ function When() {
                 height={32}
                 role="button"
               />
-              <p className={styles.btnText} >Right away</p>
+              <p className={styles.btnText}>Right away</p>
             </IconButton>
-            <IconButton className={styles.button} >
+            <IconButton className={styles.button}>
               <Image
                 src="/assets/calendar.svg"
                 alt="Herewith Logo"
@@ -43,8 +53,7 @@ function When() {
                 height={32}
                 role="button"
               />
-              <p className={styles.btnText} >I'm flexible</p>
-              
+              <p className={styles.btnText}>I'm flexible</p>
             </IconButton>
           </div>
         </div>
@@ -53,12 +62,12 @@ function When() {
         <Button className={styles.backBtn} fullWidth>
           back
         </Button>
-      <Link href={'/FindCaregiver'}>
-        <Button className={styles.nextBtn} fullWidth>
-          Next
-        </Button>
+        <Link href={"/FindCaregiver"}>
+          <Button className={styles.nextBtn} fullWidth>
+            Next
+          </Button>
         </Link>
-        </Box>
+      </Box>
     </div>
   );
 }
