@@ -26,7 +26,7 @@ function FindCaregiver() {
             src="/assets/Arrow_Left.svg"
             width={24}
             height={24}
-            alt='arrow left'
+            alt="arrow left"
             role="button"
           ></Image>
         </IconButton>
@@ -42,17 +42,18 @@ function FindCaregiver() {
           width={296}
           height={4}
           className={styles.progressBar}
-          alt='progress 2 of 4'
+          alt="progress 2 of 4"
         />
       </div>
       <Card className={styles.card}>
         <Box className={styles.cardHeader}>
           <Icon>
-            <Image 
-            width={32}
-            height={32}
-            alt='cash'
-            src="/assets/Cash.svg"></Image>
+            <Image
+              width={32}
+              height={32}
+              alt="cash"
+              src="/assets/Cash.svg"
+            ></Image>
           </Icon>
           <Typography className={styles.headerType}>
             What's your buget?
@@ -69,7 +70,12 @@ function FindCaregiver() {
       <Card className={styles.card}>
         <Box className={styles.cardHeader}>
           <Icon>
-            <Image src="/assets/Person.svg" height={32} width={32}></Image>
+            <Image
+              src="/assets/Person.svg"
+              height={32}
+              width={32}
+              alt="person"
+            ></Image>
           </Icon>
           <Typography className={styles.headerType}>
             Gender preference

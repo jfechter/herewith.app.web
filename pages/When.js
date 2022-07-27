@@ -11,17 +11,16 @@ function When() {
       <div className={styles.logo}>
         <Logo />
       </div>
-      <Link  href="/">
+      <Link href="/">
         <IconButton className={styles.arrow}>
-        <Image
-          src="/assets/Arrow_Left.svg"
-          width={24}
-          height={24}
-          role="button"
-          alt="arrow left"
-        ></Image>
+          <Image
+            src="/assets/Arrow_Left.svg"
+            width={24}
+            height={24}
+            role="button"
+            alt="arrow left"
+          ></Image>
         </IconButton>
-
       </Link>
 
       <main className={styles.main}>
@@ -31,13 +30,11 @@ function When() {
           </div>
           <div className={styles.progressContainer}>
             <Image
-                    
-                    src="/assets/progress1.svg"
-                    width={296}
-                    height={4}
-                    className={styles.progressBar}
-                    alt='progress 1 of 4'
-                
+              src="/assets/progress1.svg"
+              width={296}
+              height={4}
+              className={styles.progressBar}
+              alt="progress 1 of 4"
             />
           </div>
           <div className={styles.btnContainer}>
