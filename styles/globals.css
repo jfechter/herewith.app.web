@@ -1,16 +1,40 @@
+@font-face {
+  font-family: "GalaxieCopernicus";
+  src: url('../public/fonts/Galaxie_Copernicus/GalaxieCopernicus-Book.otf') format('opentype');
+  font-weight: normal;
+  font-style: normal;
+  font-display: fallback;
+}
+@font-face {
+  font-family: "DM Sans";
+  src: url('../public/fonts/DM_Sans/dmsans-regular-webfont.woff') format('woff'), url('../public/fonts/DM_Sans/DMSans-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-display: fallback;
+  font-style: normal;
+}
 html,
 body {
   padding: 0;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
+  font-family: GalaxieCopernicus, 'DM Sans', -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
     Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+    background-color: rgb(252,250,245);
+    -webkit-font-smoothing: antialiased; 
+    -moz-font-smoothing: antialiased; 
+    -o-font-smoothing: antialiased;
 }
 
 a {
   color: inherit;
   text-decoration: none;
 }
-
+p {
+  font-family: 'DM Sans';
+}
 * {
   box-sizing: border-box;
+}
+img {
+  max-inline-size: 100%;
+  block-size: auto;
 }

@@ -1,0 +1,98 @@
+.logo {
+  display: none;
+}
+.arrow {
+  padding: 2vh;
+}
+.questionContainer {
+  width: 80vw;
+  margin: 0 auto;
+}
+.question {
+  font-weight: 400;
+  font-size: 32px;
+  line-height: 140%;
+  text-align: center;
+  letter-spacing: -0.02em;
+  font-weight: normal;
+}
+.progressContainer {
+  margin: 2vh auto;
+  width: 328px;
+  text-align: center;
+}
+.card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 344px;
+  height: 256px;
+  border-radius: 24px;
+  margin: 2vh auto;
+}
+.selectionBtn{
+    background-color: #F5F2EB;
+    border-radius: 16px;
+    display: flex;
+    flex-direction: column;
+    width: 144px;
+    margin: 1vw;
+    font-size: 20px;
+    color: black;
+}
+.nextBtn {
+  background-color: #1d99be;
+  border-radius: 0;
+  color: white;
+  margin-top: 1vh;
+  height: 86px;
+  padding-bottom: 3vh;
+  /* position: absolute; */
+  bottom: 0;
+}
+.backBtn {
+  display: none;
+  color: black;
+}
+.cardHeader {
+  display: flex;
+  flex-direction: row;
+  align-self: flex-start;
+  align-items: center;
+  padding: 24px 24px 12px;
+}
+.headerType{
+    margin-left: 16px;
+    font-size: 20px;
+}
+.sliderBox{
+    width: 296px;
+    height: 64px;
+    display: flex;
+    align-items: flex-end;
+    margin: 2vh;
+}
+.memo {
+    width: 296px;
+    background-color: #DBF7FF;
+    color: #10677D;
+    padding: 3vw;
+    text-align: center;
+    border-radius: 16px;
+}
+.row {
+    display: flex;
+    flex-direction: row;
+}
+.btnText{
+    color: black;
+    font-size: 16px;
+}
+@media (min-width: 575px) {
+  .logo {
+    display: flex;
+  }
+  .arrow {
+    display: none;
+  }
+}
